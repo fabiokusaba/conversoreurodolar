@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0D0DD"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,8 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="202dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="Insira um valor em Euros"
         android:inputType="text"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +27,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Button"
+        android:backgroundTint="#03A9F4"
+        android:text="Converter"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:iconTint="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_euro" />
@@ -34,7 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="47dp"
-        android:text="TextView"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/button_converter"
         app:layout_constraintTop_toBottomOf="@+id/button_converter" />
 </androidx.constraintlayout.widget.ConstraintLayout>
