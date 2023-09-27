@@ -1,50 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#C0D0DD"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edit_euro"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="202dp"
+        android:gravity="center"
+        android:textColor="#042F9B"
+        android:text="Conversor de Moeda"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edit_euros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Insira um valor em Euros"
-        android:inputType="text"
-        android:textColor="#4CAF50"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textColor="#FFF"
         android:textStyle="bold"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_converter"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Converter"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:iconTint="#03A9F4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_euro" />
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:text="Dolar"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:iconTint="#03A9F4" />
+
+        <Button
+            android:id="@+id/button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:text="Real"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:iconTint="#03A9F4"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/button_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:text="Peso"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:iconTint="#03A9F4" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/text_dolares"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="47dp"
-        android:textColor="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Desenvolvido por Fabio Kusaba"
+        android:textColor="#237DD7"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/button_converter"
-        app:layout_constraintTop_toBottomOf="@+id/button_converter" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textStyle="bold" />
+</LinearLayout>
